@@ -583,7 +583,7 @@ if(BUILD_SHARED_LIBS)
   endif()
   if(MAPFLAG)
     set_target_properties(jpeg PROPERTIES
-            LINK_FLAGS "${MAPFLAG}${CMAKE_CURRENT_BINARY_DIR}/../libjpeg.map")
+            LINK_FLAGS "${MAPFLAG}${CMAKE_CURRENT_BINARY_DIR}/libjpeg.map")
   endif()
   if(MSVC)
     set_target_properties(jpeg PROPERTIES
